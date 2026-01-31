@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import SplashScreen from "./components/SplashScreen";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import SplashScreen from "./components/splashscreen";
 
-import Home from "./pages/Home";
-import Menu from "./pages/Menu";
-import Franchise from "./pages/Franchise";
-import Contact from "./pages/Contact";
+import Home from "./pages/home";
+import Menu from "./pages/menu";
+import Franchise from "./pages/franchise";
+import Contact from "./pages/contact";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
