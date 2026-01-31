@@ -1,0 +1,67 @@
+/* ============ LAYOUT ============ */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* ============ UTILITY ============ */
+.read-the-docs {
+  color: #888;
+}
+
+/* ============ PRODUCTION STYLES ============ */
+/* Ensure smooth page transitions */
+main {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Smooth anchor transitions */
+html {
+  scroll-padding-top: 80px;
+}
+
+/* Fix image rendering */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Button styles override */
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+}
+
+/* Form styles */
+input, textarea, select {
+  font-family: inherit;
+}
+
+/* Remove default input styling */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}

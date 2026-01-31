@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============ BASE STYLES ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #F1EBDC;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ============ TYPOGRAPHY ============ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  line-height: 1.3;
+}
+
+/* ============ ANIMATIONS ============ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ============ UTILITY CLASSES ============ */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fade-in-down {
+  animation: fadeInDown 0.8s ease-out forwards;
+}
+
+.scale-in {
+  animation: scaleIn 0.6s ease-out forwards;
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ============ BUTTON STYLES ============ */
+.btn-primary {
+  @apply inline-block px-7 py-3 rounded-full font-semibold text-[#0B3D2E] bg-[#D6A756] hover:bg-[#c99740] transition-all duration-300 shadow-premium hover:shadow-hover transform hover:-translate-y-1;
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  @apply inline-block px-7 py-3 rounded-full font-semibold text-[#F1EBDC] bg-[#0B3D2E] hover:bg-[#1a5a43] border-2 border-[#D6A756] transition-all duration-300 shadow-premium hover:shadow-hover transform hover:-translate-y-1;
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+}
+
+.btn-outline {
+  @apply inline-block px-7 py-3 rounded-full font-semibold border-2 border-[#D6A756] text-[#0B3D2E] hover:bg-[#D6A756] hover:text-[#0B3D2E] transition-all duration-300;
+}
+
+/* ============ CARD STYLES ============ */
+.card {
+  @apply bg-white rounded-xl shadow-premium hover:shadow-hover transition-all duration-300 transform hover:-translate-y-1;
+}
+
+.card-premium {
+  @apply card border border-[#D6A756] border-opacity-30;
+}
+
+/* ============ SECTION STYLES ============ */
+.section-padding {
+  @apply py-16 md:py-24 lg:py-32 px-4 md:px-6 lg:px-8;
+}
+
+.container-max {
+  @apply max-w-7xl mx-auto;
+}
+
+/* ============ GRADIENT ============ */
+.gradient-primary {
+  background: linear-gradient(135deg, #0B3D2E 0%, #1a5a43 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #D6A756 0%, #f4c366 100%);
+}
+
+.gradient-light {
+  background: linear-gradient(135deg, #F1EBDC 0%, #fef5e7 100%);
+}
+
+/* ============ DIVIDER ============ */
+.divider-accent {
+  @apply h-1 w-20 bg-gradient-to-r from-[#D6A756] to-[#F1EBDC] rounded-full;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+/* ============ SCROLLBAR STYLING ============ */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1EBDC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6A756;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c99740;
+}
