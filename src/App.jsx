@@ -20,6 +20,7 @@ function App() {
   return (
     <BrowserRouter>
       {showSplash && <SplashScreen />}
+      <div className="watermark">Designed & Developed by Daniel Deshmukh & Saurabh Yadav</div>
       <Header />
 
       <Routes>
