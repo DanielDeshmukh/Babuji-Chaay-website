@@ -49,9 +49,40 @@
       }
     }
     </script>
+
+    <style>
+      .watermark {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        font-size: 10px;
+        color: #666666;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        pointer-events: none;
+        z-index: 50;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        white-space: nowrap;
+        user-select: none;
+        line-height: 1.6;
+        text-align: right;
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+      }
+
+      .watermark:hover {
+        opacity: 0.9;
+      }
+    </style>
   </head>
 
   <body>
+    <div class="watermark">
+      <div style="font-size: 9px; margin-bottom: 2px;">Crafted by</div>
+      <div style="font-size: 11px; font-weight: 600;">Daniel Deshmukh</div>
+      <div style="font-size: 11px; font-weight: 600;">Saurabh Yadav</div>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
