@@ -1,16 +1,148 @@
-# React + Vite
+# Vikas Giri - Restaurant Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website built for **Vikas Giri**, a premium dining establishment. This project showcases a clean and professional online presence with product listings, franchise information, and customer contact capabilities.
 
-Currently, two official plugins are available:
+##  Business Information
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Client:** Vikas Giri  
+**Location:** Shop No. 7, K.D Empire, Mira Road East (401107), India  
+**Website Type:** Restaurant & Franchise Portal
+**Website:** https://babujichaai.in
 
-## React Compiler
+##  Project Overview
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+This is a modern web application built with React and Vite, designed to provide customers with:
 
-## Expanding the ESLint configuration
+- **Home Page** - Welcome and featured content
+- **Menu** - Complete product/menu listings
+- **Franchise Information** - Details for potential franchise partners
+- **Contact Page** - Customer inquiries and support
+- **Responsive Design** - Optimized for all devices
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Tech Stack
+
+- **Frontend Framework:** React
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS & PostCSS
+- **Code Quality:** ESLint
+- **Package Manager:** npm
+
+##  Project Structure
+
+```
+├── public/                  # Static assets
+│   ├── robots.txt          # SEO optimization
+│   └── sitemap.xml         # XML sitemap
+│
+├── src/
+│   ├── assets/             # Images and media
+│   │   ├── Logo.png
+│   │   ├── icon.png
+│   │   └── picture.png
+│   │
+│   ├── components/         # Reusable components
+│   │   ├── header.jsx      # Navigation header
+│   │   ├── footer.jsx      # Footer component
+│   │   └── splashscreen.jsx # Splash screen
+│   │
+│   ├── pages/              # Page components
+│   │   ├── home.jsx        # Landing page
+│   │   ├── menu.jsx        # Menu/Products
+│   │   ├── franchise.jsx   # Franchise info
+│   │   └── contact.jsx     # Contact page
+│   │
+│   ├── data/               # Data files
+│   │   └── products.js     # Menu/Product data
+│   │
+│   ├── App.jsx             # Main app component
+│   ├── App.css             # Global styles
+│   ├── index.css           # Base styles
+│   └── main.jsx            # Entry point
+│
+└── Configuration Files
+    ├── vite.config.js      # Vite configuration
+    ├── tailwind.config.cjs # Tailwind CSS config
+    ├── postcss.config.cjs  # PostCSS config
+    ├── eslint.config.js    # ESLint rules
+    └── package.json        # Dependencies
+```
+
+##  Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd website
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+##  Available Scripts
+
+- `npm run dev` - Start development server with hot module replacement
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint code quality checks
+
+##  Features
+
+-  Fully responsive design
+-  Fast loading with Vite
+-  Modern UI with Tailwind CSS
+-  Mobile-optimized interface
+-  SEO-friendly structure
+-  Accessible component design
+
+##  Team
+
+**Crafted By:**
+- **Daniel Deshmukh**
+- **Saurabh Yadav**
+
+##  License
+
+This project is proprietary and confidential. All rights reserved for the client Vikas Giri.
+
+##  Contact & Support
+
+For inquiries or support, please contact us through the website's contact page or visit us at:
+
+**Vikas Giri**  
+Shop No. 7, K.D Empire  
+Mira Road East, 401107  
+India
+Contact: 9076165666
+Website: https://babujichaai.in
+
+---
+
+*Last Updated: February 2026*
