@@ -94,24 +94,6 @@ npm run dev
 
 The application will be available at `http://localhost:5173`
 
-### Build for Production
-
-```bash
-npm run build
-```
-
-### Preview Production Build
-
-```bash
-npm run preview
-```
-
-##  Available Scripts
-
-- `npm run dev` - Start development server with hot module replacement
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build locally
-- `npm run lint` - Run ESLint code quality checks
 
 ##  Features
 
