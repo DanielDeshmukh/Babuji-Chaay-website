@@ -122,7 +122,7 @@ For inquiries or support, please contact us through the website's contact page o
 Shop No. 7, K.D Empire  
 Mira Road East, 
 India  
-*Contact*: 9076165666  
+Contact: 9076165666  
 Website: https://babujichaai.in
 
 ---
