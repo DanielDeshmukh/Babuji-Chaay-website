@@ -1,4 +1,4 @@
-# Vikas Giri - Restaurant Website
+# Babuji Chaay - Restaurant Website
 
 A modern, responsive website built for **Vikas Giri**, a premium dining establishment. This project showcases a clean and professional online presence with product listings, franchise information, and customer contact capabilities.
 
@@ -138,9 +138,9 @@ For inquiries or support, please contact us through the website's contact page o
 
 **Vikas Giri**  
 Shop No. 7, K.D Empire  
-Mira Road East, 401107  
-India
-Contact: 9076165666
+Mira Road East, 
+India  
+*Contact*: 9076165666  
 Website: https://babujichaai.in
 
 ---
